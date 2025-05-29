@@ -2,7 +2,9 @@ from fastapi import APIRouter, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from app.config import config
-
+#from app.data.db import SessionDep
+#from app.models.event import Event
+#from sqlmodel import select
 
 router = APIRouter()
 templates = Jinja2Templates(directory=config.root_dir / "templates")
